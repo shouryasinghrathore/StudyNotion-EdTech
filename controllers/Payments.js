@@ -3,7 +3,7 @@ const { instance } = require('../config/razorpay');
 const Course = require("../models/Course")
 const User = require("../models/User");
 const mailSender = require('../utils/mailSender');
-const { classify } = require('i/lib/methods');
+const crypto = require('crypto');
 
 
 //capture the payment 
